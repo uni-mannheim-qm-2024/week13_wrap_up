@@ -1,7 +1,7 @@
 ---
-title: "QM 2023 Week 13: Wrap Up"
-author: "Oliver Rittmann & Domantas Undzėnas"
-date: "November 30 | December 1, 2023"
+title: "QM 2024 Week 13: Wrap Up"
+author: "Domantas Undzėnas &  Lisa-Marie Müller"
+date: "November 28 | 29, 2024"
 output:
   html_document:
     toc: yes
@@ -100,7 +100,7 @@ theme_set(theme_classic() + # start with classic theme
     legend.position = "bottom" # by default, put legend on the bottom
   ))
 
-set.seed(2023)
+set.seed(2024)
 ```
 
 
@@ -216,7 +216,7 @@ Simulate from your model, identify the response function (inverse link function)
 
 ```{r, warning = F, message = F}
 # Sample from our population, n=1,000
-set.seed(2023)
+set.seed(2024)
 ids <- sample(1:N, 1000)
 data <- as.data.frame(
   cbind(
@@ -707,7 +707,7 @@ Your standard YAML when creating a PDF will contain the title, author, date, and
 ---
 title: "Data Essay"
 author: Anna Schmidt
-date: December 7, 2023
+date: December 11, 2024
 output: pdf_document
 ---
 ```
@@ -760,7 +760,7 @@ output:
 ```
 
 You can also make your reports a little more flexible and print out the date of knitting rather than the predefined date argument.
-This can be done with inline coding in R: `format(Sys.Date(), "%B %d, %Y")` will give date in the format "December 7, 2023".
+This can be done with inline coding in R: `format(Sys.Date(), "%B %d, %Y")` will give date in the format "November 28/29, 2024".
 
 ``` {.yaml}
 ---
